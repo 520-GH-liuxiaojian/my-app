@@ -99,6 +99,24 @@ module.exports = {
         // 媒体查询中设置断点宽度里的 ":" 前不能有空格
         'media-feature-colon-space-before': 'never',
 
-        'at-rule-no-unknown': true,
+        'at-rule-no-unknown': [
+            true,
+            {
+                ignoreAtRules: [
+                    'function',
+                    'if',
+                    'each',
+                    'include',
+                    'mixin',
+                    'for',
+                    'else',
+                    'return',
+                    'error',
+                    'at-root',
+                    'extend',
+                    'warn',
+                ],
+            },
+        ],
     },
 }

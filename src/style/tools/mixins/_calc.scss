@@ -12,5 +12,5 @@
 ///	}
 
 @mixin calc($prop, $val) {
-  #{$prop}: calc(#{$val});
+    #{$prop}: calc(#{$val});
 }

@@ -7,22 +7,24 @@
 @mixin haslines($gutter:20px, $color:#ccc, $minWidth:20px, $height:1px) {
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: center;
-    &:before,
-    &:after {
-        content: '';
-        flex-grow: 1;
-        background-color: $color;
+    text-align: center;
+
+    &::before, &::after {
         display: inline-block;
-        vertical-align: middle;
-        height: $height;
+        flex-grow: 1;
         min-width: $minWidth;
+        height: $height;
+        vertical-align: middle;
+        content: "";
+        background-color: $color;
     }
-    &:before {
+
+    &::before {
         margin-right: $gutter;
     }
-    &:after {
+
+    &::after {
         margin-left: $gutter;
     }
 }

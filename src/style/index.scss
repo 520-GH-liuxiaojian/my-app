@@ -1,16 +1,19 @@
 @import "./settings/var.scss";
 
+@import "./tools/sassMagic.scss";
+
 @import "./elements/page.scss";
 @import "./elements/article.scss";
 @import "./elements/images.scss";
 @import "./elements/link.scss";
+@import "./elements/form.scss";
+@import "./elements/paragraph.scss";
 
 @import "./acss/border.scss";
 @import "./acss/color.scss";
-//@import "./acss/ellipsis.scss";
-
+@import "./acss/decoration.scss";
+@import "./acss/ellipsis.scss";
+@import "./acss/fontColor.scss";
 @import "./acss/fontSize.scss";
-@import "./acss/whiteSpace.scss";
+@import "./acss/whiteSpace";
 @import "./acss/zIndex.scss";
-
-@import "./tools/sassMagic.scss";
