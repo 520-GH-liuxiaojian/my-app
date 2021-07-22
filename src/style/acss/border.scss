@@ -1,0 +1,14 @@
+.bor-base {
+    border: $border-base;
+}
+
+@for $i from 1 through 10 {
+    .radius#{$i} {
+        overflow: hidden;
+        border-radius: #{$i}Px;
+    }
+}
+
+.circle {
+    border-radius: 50%;
+}

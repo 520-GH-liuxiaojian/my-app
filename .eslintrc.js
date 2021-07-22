@@ -27,5 +27,6 @@ module.exports = {
         'import/extensions': 'off',
         'import/no-unresolved': 'off',
         semi: ['error', 'never'],
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
     },
 }
