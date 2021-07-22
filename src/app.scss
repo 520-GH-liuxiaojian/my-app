@@ -1,0 +1,7 @@
+@import "style/tools/sassMagic.scss";
+
+.app {
+    width: 200px;
+    height: 200px;
+    @include box-center(center, center);
+}
