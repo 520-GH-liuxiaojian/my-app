@@ -60,5 +60,18 @@
         "stylelint-order": "^4.1.0",
         "typescript": "^4.1.2",
         "web-vitals": "^1.0.1"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint-staged",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "lint-staged": {
+        "*{.ts,.js}":[
+            "eslint --ext .tsx,.ts --fix ./src",
+            "prettier --write",
+            "git add"
+        ]
     }
 }
