@@ -6,6 +6,8 @@ module.exports = {
     extends: [
         'plugin:react/recommended',
         'airbnb',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:prettier/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -15,10 +17,7 @@ module.exports = {
         ecmaVersion: 12,
         sourceType: 'module',
     },
-    plugins: [
-        'react',
-        '@typescript-eslint',
-    ],
+    plugins: ['react', '@typescript-eslint', 'prettier'],
     rules: {
         indent: ['error', 4],
         'react/jsx-indent': ['error', 4],
@@ -27,5 +26,6 @@ module.exports = {
         'no-use-before-define': 'off',
         'import/extensions': 'off',
         'import/no-unresolved': 'off',
+        semi: ['error', 'never'],
     },
-};
+}
